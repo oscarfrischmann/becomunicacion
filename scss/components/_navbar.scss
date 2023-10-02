@@ -1,0 +1,32 @@
+header {
+    background-color: #161f37;
+}
+
+.logo-simple {
+    width: 150px;
+    position: relative;
+    top: -30px;
+}
+
+.navbar {
+    position: relative;
+    top: -50px;
+}
+
+.nav-link {
+    color: #ea5736;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.navbar-toggler {
+    border: none;
+
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.dropdown-item {
+    text-transform: capitalize;
+}

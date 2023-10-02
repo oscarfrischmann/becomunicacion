@@ -1,0 +1,11 @@
+@mixin flex($justify, $align, $direction, $gap) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+    gap: $gap;
+}
+
+$primaryColor: #EA5736;
+$secondaryColor: #B9C108;
+$bg-color: #161F37

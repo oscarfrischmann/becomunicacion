@@ -1,0 +1,69 @@
+:root {
+    --background: rgb(255, 255, 255);
+    --primary: #ea5736;
+    --secondary: #ea5736;
+    --third: #ea5736;
+}
+
+.shape {
+    background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 50%);
+    animation: morph 4s linear infinite, rot55 6s;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    height: 350px;
+    transition: all 1s ease-in-out;
+    width: 350px;
+    z-index: 5;
+    box-shadow: inset -10px 0px 5px 5px #f7380d, 3px 3px 35px 5px rgb(61, 28, 1);
+}
+
+.shape-container {
+    overflow: hidden;
+    height: 350px;
+    width: 350px;
+}
+
+@keyframes morph {
+    0% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+        transform: scale(1);
+    }
+
+    50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+        background: linear-gradient(45deg, var(--third) 0%, var(--secondary) 100%);
+        transform: scale(0.8);
+    }
+
+    60% {
+        transform: scale(0.6);
+    }
+
+    70% {
+        transform: scale(0.3);
+    }
+
+    80% {
+        transform: scale(0.1);
+    }
+
+    100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 700px) {
+    .shape-container {
+        transform: scale(0.5) translateX(-150px);
+        z-index: -1;
+    }
+}
+
+@media (max-width: 991px) {
+    .shape-container {
+        transform: scale(0.5) translatex(-150px) translateY(100px);
+        z-index: -1;
+    }
+}
