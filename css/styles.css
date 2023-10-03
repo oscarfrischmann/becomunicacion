@@ -80,12 +80,15 @@ header {
   color: white;
   margin-top: 30px;
 }
+.footer__end p {
+  font-size: 0.8rem;
+}
 .footer__end p:nth-child(1) {
   place-self: flex-start;
   margin-top: 7px;
 }
 .footer__end p:nth-child(2) {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .footer__end p:nth-child(2) a {
   color: white;
