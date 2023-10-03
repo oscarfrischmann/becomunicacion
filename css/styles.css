@@ -172,6 +172,37 @@ main {
     z-index: -1;
   }
 }
+.mision {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
+  margin: 60px auto 120px;
+  background-color: lightgrey;
+  max-width: 1200px;
+  height: 600px;
+}
+.mision div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.mision__img {
+  width: 400px;
+}
+.mision h2,
+.mision p {
+  color: #161F37;
+  font-size: 1.5rem;
+}
+.mision h2 {
+  text-transform: capitalize;
+  font-size: 3rem;
+}
+
 .vision {
   display: flex;
   justify-content: center;
