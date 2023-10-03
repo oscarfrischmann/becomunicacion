@@ -1,5 +1,6 @@
 header {
-    background-color: #161f37;
+    // background-color: #161f37;
+    background-image: linear-gradient(#161f37 40%, #161f3700);
 }
 
 .logo-simple {
@@ -15,7 +16,7 @@ header {
 
 .nav-link {
     color: #ea5736;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
 }
 
@@ -29,4 +30,16 @@ header {
 
 .dropdown-item {
     text-transform: capitalize;
+
+    &:active {
+        background-color: #ea5736;
+    }
+}
+
+main {
+    padding-top: 200px;
+}
+
+.nav-link:hover {
+    color: #fff !important;
 }
