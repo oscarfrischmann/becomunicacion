@@ -41,6 +41,14 @@ main {
   color: #fff !important;
 }
 
+.navbar-collapse.show {
+  background-color: #161F37;
+}
+
+.navbar-collapse.collapsing {
+  background-color: #161F37;
+}
+
 .footer {
   padding-left: 60px;
 }

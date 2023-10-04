@@ -43,3 +43,11 @@ main {
 .nav-link:hover {
     color: #fff !important;
 }
+
+.navbar-collapse.show {
+    background-color: $bg-color;
+}
+
+.navbar-collapse.collapsing {
+    background-color: $bg-color;
+}
