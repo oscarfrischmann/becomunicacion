@@ -188,7 +188,7 @@ main {
   gap: 1rem;
   margin: 60px auto 120px;
   background-color: lightgrey;
-  max-width: 1200px;
+  max-width: 100vw;
   height: 600px;
 }
 .mision div {
