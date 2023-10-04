@@ -197,6 +197,7 @@ main {
   align-items: center;
   flex-direction: column;
   gap: 2rem;
+  max-width: 900px;
 }
 .mision__img {
   width: 400px;
