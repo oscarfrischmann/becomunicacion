@@ -1,6 +1,6 @@
 header {
-    // background-color: #161f37;
-    background-image: linear-gradient(#161f37 40%, #161f3700);
+    background-color: #ffffff;
+    height: 60px;
 }
 
 .logo-simple {
@@ -11,11 +11,11 @@ header {
 
 .navbar {
     position: relative;
-    top: -50px;
+    top: -60px;
 }
 
 .nav-link {
-    color: #ea5736;
+    color: $bg-color !important;
     font-size: 1.2rem;
     text-transform: uppercase;
 }
@@ -28,11 +28,24 @@ header {
     }
 }
 
-.dropdown-item {
-    text-transform: capitalize;
+.dropdown-menu {
+    border: none;
 
-    &:active {
-        background-color: #ea5736;
+    .dropdown-item {
+        text-transform: capitalize;
+        color: white !important;
+
+        // &:active {
+        //     background-color: #ea5736;
+        // }
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.116);
+        }
+    }
+
+    &.show {
+        background-color: transparent;
     }
 }
 
@@ -40,14 +53,23 @@ main {
     padding-top: 200px;
 }
 
-.nav-link:hover {
-    color: #fff !important;
-}
+.navbar-collapse.collapse.show {
+    background: $bg-color;
 
-.navbar-collapse.show {
-    background-color: $bg-color;
+    li {
+        a {
+            color: white !important;
+        }
+    }
 }
 
 .navbar-collapse.collapsing {
-    background-color: $bg-color;
+    background: $bg-color;
+    top: 50px !important;
+
+    li {
+        a {
+            color: white !important;
+        }
+    }
 }

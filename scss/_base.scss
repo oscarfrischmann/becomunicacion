@@ -1,3 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bs-gutter-x: 0;
+}
+
+.container-fluid {
+    --bs-gutter-x: 0rem;
+}
+
+
 @mixin flex($justify, $align, $direction, $gap) {
     display: flex;
     justify-content: $justify;
@@ -7,5 +22,8 @@
 }
 
 $primaryColor: #EA5736;
+$orange: #EA5736;
 $secondaryColor: #B9C108;
-$bg-color: #161F37
+$bg-color: #161F37;
+
+$marginSection: 7rem;

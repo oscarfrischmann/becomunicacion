@@ -1,5 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bs-gutter-x: 0;
+}
+
+.container-fluid {
+  --bs-gutter-x: 0rem;
+}
+
 header {
-  background-image: linear-gradient(#161f37 40%, rgba(22, 31, 55, 0));
+  background-color: #ffffff;
+  height: 60px;
 }
 
 .logo-simple {
@@ -10,11 +25,11 @@ header {
 
 .navbar {
   position: relative;
-  top: -50px;
+  top: -60px;
 }
 
 .nav-link {
-  color: #ea5736;
+  color: #161F37 !important;
   font-size: 1.2rem;
   text-transform: uppercase;
 }
@@ -26,27 +41,37 @@ header {
   box-shadow: none;
 }
 
-.dropdown-item {
-  text-transform: capitalize;
+.dropdown-menu {
+  border: none;
 }
-.dropdown-item:active {
-  background-color: #ea5736;
+.dropdown-menu .dropdown-item {
+  text-transform: capitalize;
+  color: white !important;
+}
+.dropdown-menu .dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.116);
+}
+.dropdown-menu.show {
+  background-color: transparent;
 }
 
 main {
   padding-top: 200px;
 }
 
-.nav-link:hover {
-  color: #fff !important;
+.navbar-collapse.collapse.show {
+  background: #161F37;
 }
-
-.navbar-collapse.show {
-  background-color: #161F37;
+.navbar-collapse.collapse.show li a {
+  color: white !important;
 }
 
 .navbar-collapse.collapsing {
-  background-color: #161F37;
+  background: #161F37;
+  top: 50px !important;
+}
+.navbar-collapse.collapsing li a {
+  color: white !important;
 }
 
 .footer {
@@ -187,9 +212,9 @@ main {
   flex-direction: row;
   gap: 1rem;
   margin: 60px auto 120px;
-  background-color: lightgrey;
   max-width: 100vw;
   height: 600px;
+  padding: 150px;
 }
 .mision div {
   display: flex;
@@ -197,19 +222,20 @@ main {
   align-items: center;
   flex-direction: column;
   gap: 2rem;
-  max-width: 900px;
+  max-width: 700px;
 }
 .mision__img {
   width: 400px;
 }
 .mision h2,
 .mision p {
-  color: #161F37;
-  font-size: 1.5rem;
+  color: white;
+  font-size: 1.3rem;
 }
 .mision h2 {
   text-transform: capitalize;
   font-size: 3rem;
+  place-self: end;
 }
 
 .vision {
@@ -218,7 +244,10 @@ main {
   align-items: center;
   flex-direction: row;
   gap: 1rem;
-  margin: 120px auto;
+  margin: 7rem auto;
+  background-color: lightgrey;
+  padding: 150px;
+  width: 100%;
 }
 .vision div {
   display: flex;
@@ -226,14 +255,15 @@ main {
   align-items: start;
   flex-direction: column;
   gap: 2rem;
+  max-width: 700px;
 }
 .vision__img {
   width: 400px;
 }
 .vision h2,
 .vision p {
-  color: white;
-  font-size: 1.5rem;
+  color: #161F37;
+  font-size: 1.3rem;
 }
 .vision h2 {
   text-transform: capitalize;
@@ -261,6 +291,10 @@ main {
   outline: 3px dashed #B9C108;
   border: 0.3rem solid #EA5736;
   outline-offset: 4px;
+  transition: all 8s ease-in-out;
+}
+.success:hover {
+  transform: rotate(360deg);
 }
 
 .inner {
@@ -278,6 +312,7 @@ main {
 .valores {
   display: flex;
   flex-direction: column;
+  margin: 7rem auto;
 }
 .valores h2 {
   color: white;
@@ -287,8 +322,9 @@ main {
   text-align: center;
 }
 .valores img {
-  width: 190px;
+  width: 30%;
   align-self: center;
+  transform: translateY(-100px);
 }
 .valores .inner {
   text-transform: uppercase;
@@ -360,6 +396,7 @@ body {
   grid-template-rows: repeat(7, 100px);
 }
 .index__tittles-h2 {
+  font-size: 1.8rem;
   color: white;
   grid-column: 1/3;
   grid-row: 1/2;
@@ -367,12 +404,13 @@ body {
 }
 .index__tittles-p {
   color: white;
-  font-size: 4rem;
+  font-size: 3.2rem;
   font-weight: 700;
   width: 60%;
   line-height: 1em;
   grid-column: 1/4;
   grid-row: 3/5;
+  padding-left: 50px;
 }
 
 .shape-container {
@@ -383,10 +421,21 @@ body {
 }
 
 .index__logo {
-  width: 100%;
+  width: 80%;
   grid-column: 3/4;
   grid-row: -5/-1;
   place-self: start;
+}
+
+.dropdown-menu {
+  background-color: #161F37;
+  border: none;
+}
+.dropdown-menu .dropdown-item {
+  color: #EA5736;
+}
+.dropdown-menu .dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.116);
 }
 
 /*# sourceMappingURL=styles.css.map */

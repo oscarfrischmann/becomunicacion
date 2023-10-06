@@ -13,9 +13,9 @@
 <body>
     <header class="container-fluid fixed-top">
         <nav class="navbar navbar-expand-lg">
-            <div class="container">
+            <div class="container navbar-align">
                 <a class="navbar-brand" href="#"><img src="./img/logo-simple.png" alt="" class="logo-simple" /></a>
-                <button class="navbar-toggler" data-bs-theme="dark" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -24,19 +24,24 @@
                     <ul class="navbar-nav">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false" style="color: #ea5736">
+                                aria-expanded="false">
                                 nosotros
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="./pages/nuestros-valores.html">nuestros valores</a>
+                                <li>
+                                    <a class="dropdown-item" href="#valores">nuestros valores</a>
                                 </li>
-                                <li><a class="dropdown-item" href="./pages/vision.html">visión</a></li>
-                                <li><a class="dropdown-item" href="./pages/mision.html">misión</a></li>
+                                <li>
+                                    <a class="dropdown-item" href="#vision">visión</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#mision">misión</a>
+                                </li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false" style="color: #ea5736">
+                                aria-expanded="false">
                                 nuestros servicios
                             </a>
                             <ul class="dropdown-menu">
@@ -50,18 +55,19 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" style="color: #ea5736">quienes somos</a>
+                            <a class="nav-link" href="#">quienes somos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" style="color: #ea5736">contactanos</a>
+                            <a class="nav-link" href="#">contactanos</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <main class="container">
-        <section class="index__tittles">
+    <main class="container-fluid">
+
+        <section class="index__tittles container">
             <div class="shape-container">
                 <div class="shape"></div>
             </div>
@@ -69,9 +75,61 @@
                 Comunicación Organizacional <br />y Relaciones Institucionales
             </h2>
             <p class="index__tittles-p">
-                Soluciones holísticas, <br />ágiles y transformadoras
+                Soluciones holísticas, ágiles y <br />transformadoras
             </p>
             <img src="./img/Logo-fondo-oscuro.png" class="index__logo" alt="" />
+        </section>
+
+        <section class="valores">
+            <div style="height: 100px;" id="valores"></div>
+            <h2>nuestros valores</h2>
+
+            <section class="valores__section container">
+                <div class="circle-wrapper">
+                    <div class="success circle"></div>
+                    <div class="inner">colaboración</div>
+                </div>
+                <div class="circle-wrapper">
+                    <div class="success circle"></div>
+                    <div class="inner">adaptabilidad</div>
+                </div>
+                <div class="circle-wrapper">
+                    <div class="success circle"></div>
+                    <div class="inner">equilibrio</div>
+                </div>
+                <div class="circle-wrapper">
+                    <div class="success circle"></div>
+                    <div class="inner">transparencia</div>
+                </div>
+            </section>
+            <img src="img/nuestros_valores-becomunicacion.svg" alt="" />
+        </section>
+
+        <div style="height: 70px;" id="vision"></div>
+        <section class="vision container-fuild" id="">
+
+            <div class="row g-0">
+                <h2 class="vision__h2">visión</h2>
+                <p class="vision__p">
+                    Creemos que las personas, los escenarios y los desafíos que enfrenta una organización están en
+                    constante transformación. Adaptarnos para ser competitivos y alcanzar nuestros objetivos requiere
+                    establecer una estrategia integral en la comunicación, con equipos física y emocionalmente
+                    saludables.<br><br> Somos comunicación. Somos inspiradores de culturas de bienestar, ágiles y
+                    eficaces. </p>
+            </div>
+            <img src="./img/LogoLINEAL-mix.png" class="vision__img" alt="" />
+        </section>
+
+        <section class="mision container" id="mision">
+            <img src="../img/Logo-BLANCO.png" class="mision__img" alt="" />
+            <div>
+                <h2 class="mision__h2">misión</h2>
+                <p class="mision__p">
+                    Nuestro propósito es brindar herramientas comunicacionales efectivas a líderes y equipos de trabajo
+                    para que puedan potenciar sus habilidades, maximizando la capacidad instalada y generando
+                    condiciones saludables para un crecimiento virtuoso de su organización.
+                </p>
+            </div>
         </section>
     </main>
     <footer class="container footer">

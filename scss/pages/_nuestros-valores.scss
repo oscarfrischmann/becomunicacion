@@ -22,6 +22,12 @@
     outline: 3px dashed $secondaryColor;
     border: 0.3rem solid $primaryColor;
     outline-offset: 4px;
+    transition: all 8s ease-in-out;
+
+    &:hover {
+        transform: rotate(360deg);
+    }
+
 }
 
 .inner {
@@ -53,6 +59,7 @@
 .valores {
     display: flex;
     flex-direction: column;
+    margin: $marginSection auto;
 
     h2 {
         color: white;
@@ -63,8 +70,9 @@
     }
 
     img {
-        width: 190px;
+        width: 30%;
         align-self: center;
+        transform: translateY(-100px);
     }
 
     .inner {
@@ -85,6 +93,8 @@
         div:nth-child(1) {
             grid-column: 1/2;
             grid-row: 1/2;
+
+
         }
 
         div:nth-child(2) {
