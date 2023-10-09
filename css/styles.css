@@ -519,4 +519,68 @@ body {
   margin-bottom: 100px;
 }
 
+.quienes-somos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3em;
+  color: white;
+  margin-top: 7rem;
+}
+.quienes-somos article {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: row;
+  gap: 3em;
+  margin-top: 50px;
+}
+.quienes-somos h2 {
+  text-transform: capitalize;
+  margin: 0 auto 50px auto;
+}
+.quienes-somos__tittles {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: 1.5em;
+}
+.quienes-somos__tittles span:nth-child(1) {
+  color: #EA5736;
+}
+.quienes-somos__p {
+  text-align: center;
+  color: #EA5736;
+  width: 60%;
+}
+.quienes-somos__manuel {
+  position: relative;
+  max-width: 400px;
+}
+.quienes-somos__manuel .fake-m {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border: 1px solid white;
+  border-radius: 50%;
+  right: 70px;
+  top: -100px;
+}
+.quienes-somos__aniela {
+  position: relative;
+  max-width: 400px;
+}
+.quienes-somos__aniela .fake-a {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border: 1px solid white;
+  border-radius: 50%;
+  right: 70px;
+  top: -100px;
+}
+
 /*# sourceMappingURL=styles.css.map */

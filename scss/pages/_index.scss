@@ -49,7 +49,6 @@ body {
     border: none;
     top: 117%;
 
-
     .dropdown-item {
         color: $orange;
 
@@ -64,7 +63,6 @@ body {
     padding-top: 100px;
 
     &__article {
-
         display: grid;
         margin: 0 auto;
         grid-template-columns: repeat(3, 1fr);
@@ -82,7 +80,6 @@ body {
             font-weight: 400;
             font-size: 1.3rem;
             padding-bottom: 30px;
-
         }
 
         img {
@@ -92,9 +89,6 @@ body {
         }
     }
 
-
-
-
     &__ul {
         grid-column: 2/4;
         justify-self: center;
@@ -102,9 +96,7 @@ body {
         font-size: 1.1rem;
         z-index: 2;
         line-height: 2rem;
-
     }
-
 }
 
 .com-interna.emocional {
@@ -123,7 +115,6 @@ body {
         place-self: center;
         margin-top: 100px;
         margin-bottom: 100px;
-
     }
 }
 
@@ -138,7 +129,6 @@ body {
 
         h3 {
             font-size: 1.8em;
-
         }
     }
 
@@ -146,7 +136,6 @@ body {
         grid-row: 2/3;
         grid-column: 1/4;
         text-align: center;
-
     }
 
     ul {
@@ -161,6 +150,68 @@ body {
         width: 44%;
         transform: translate(0, 0);
         margin-bottom: 100px;
+    }
+}
 
+//*QUIENES SOMOS
+
+.quienes-somos {
+    @include flex(center, center, column, 3em);
+    color: white;
+    margin-top: 7rem;
+
+    article {
+        @include flex(center, start, row, 3em);
+        margin-top: 50px
+    }
+
+    h2 {
+        text-transform: capitalize;
+        margin: 0 auto 50px auto;
+    }
+
+    &__tittles {
+        @include flex(center, start, column, 0);
+        margin-bottom: 1.5em;
+
+        span:nth-child(1) {
+            color: $orange;
+        }
+    }
+
+    &__p {
+        text-align: center;
+        color: $orange;
+        width: 60%;
+    }
+
+    &__manuel {
+        position: relative;
+        max-width: 400px;
+
+        .fake-m {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            border: 1px solid white;
+            border-radius: 50%;
+            right: 70px;
+            top: -100px;
+        }
+    }
+
+    &__aniela {
+        position: relative;
+        max-width: 400px;
+
+        .fake-a {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            border: 1px solid white;
+            border-radius: 50%;
+            right: 70px;
+            top: -100px;
+        }
     }
 }
