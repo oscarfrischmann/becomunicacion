@@ -1,6 +1,5 @@
 body {
     background: #161f37;
-
 }
 
 .index__tittles {
@@ -26,10 +25,7 @@ body {
         grid-column: 1/4;
         grid-row: 3/5;
         padding-left: 50px;
-
     }
-
-
 }
 
 .shape-container {
@@ -46,9 +42,13 @@ body {
     place-self: start;
 }
 
-.dropdown-menu {
+//*DROPDOWN MENU - bootstrap
+
+.dropdown-menu.show {
     background-color: $bg-color;
     border: none;
+    top: 117%;
+
 
     .dropdown-item {
         color: $orange;
@@ -57,5 +57,110 @@ body {
             background-color: rgba(255, 255, 255, 0.116);
         }
     }
+}
 
+//*COMUNICACION INTERNA
+.com-interna {
+    padding-top: 100px;
+
+    &__article {
+
+        display: grid;
+        margin: 0 auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto) repeat(2, auto);
+        width: 80%;
+        position: relative;
+
+        h2 {
+            grid-column: span 3;
+            padding-bottom: 30px;
+        }
+
+        h3 {
+            grid-column: span 3;
+            font-weight: 400;
+            font-size: 1.3rem;
+            padding-bottom: 30px;
+
+        }
+
+        img {
+            width: 150%;
+            // justify-self: span 2;
+            transform: translate(180px, -50px);
+        }
+    }
+
+
+
+
+    &__ul {
+        grid-column: 2/4;
+        justify-self: center;
+        width: 70%;
+        font-size: 1.1rem;
+        z-index: 2;
+        line-height: 2rem;
+
+    }
+
+}
+
+.com-interna.emocional {
+    color: white;
+
+    ul {
+        grid-column: 1/3;
+        grid-row: 3/5;
+    }
+
+    img {
+        width: 50%;
+        transform: translate(0, 0);
+        grid-column: 2/4;
+        grid-row: -3/-1;
+        place-self: center;
+        margin-top: 100px;
+        margin-bottom: 100px;
+
+    }
+}
+
+.com-interna.externa {
+    div {
+        grid-column: 1/4;
+        text-align: center;
+
+        h2 {
+            padding-bottom: 0;
+        }
+
+        h3 {
+            font-size: 1.8em;
+
+        }
+    }
+
+    p {
+        grid-row: 2/3;
+        grid-column: 1/4;
+        text-align: center;
+
+    }
+
+    ul {
+        grid-column: 1/4;
+        place-self: center;
+        width: fit-content;
+    }
+
+    img {
+        grid-column: 1/4;
+        place-self: center;
+        width: 44%;
+        transform: translate(0, 0);
+        margin-bottom: 100px;
+
+    }
 }
