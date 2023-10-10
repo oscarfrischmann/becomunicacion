@@ -12,6 +12,9 @@
     --bs-gutter-x: 0rem;
 }
 
+.container {
+    --bs-gutter-x: 0rem;
+}
 
 @mixin flex($justify, $align, $direction, $gap) {
     display: flex;
@@ -21,9 +24,9 @@
     gap: $gap;
 }
 
-$primaryColor: #EA5736;
-$orange: #EA5736;
-$secondaryColor: #B9C108;
-$bg-color: #161F37;
+$primaryColor: #ea5736;
+$orange: #ea5736;
+$secondaryColor: #b9c108;
+$bg-color: #161f37;
 
 $marginSection: 7rem;
