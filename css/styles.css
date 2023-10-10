@@ -269,12 +269,31 @@ body {
   place-self: start;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1160px) {
   .index__tittles {
     grid-template-rows: repeat(5, 100px);
   }
   .index__tittles-p {
-    font-size: 2.8rem;
+    font-size: 2.6rem;
+    padding-left: 30px;
+  }
+}
+@media (max-width: 991px) {
+  .index__tittles {
+    grid-template-rows: repeat(5, 100px);
+  }
+  .index__tittles-p {
+    font-size: 2.6rem;
+    padding-left: 30px;
+  }
+  .index__logo {
+    width: 100%;
+    grid-column: 3/4;
+    grid-row: -3/-1;
+    place-self: end;
+  }
+  main {
+    padding: 130px;
   }
 }
 .dropdown-menu.show {
@@ -303,7 +322,7 @@ body {
   border-radius: 50%;
   padding: 2.5px;
   background-clip: content-box;
-  animation: spin 15s cubic-bezier(0.46, 2.02, 0, -0.21);
+  animation: spin 15s cubic-bezier(0.46, 2.02, 0, -0.21) infinite;
 }
 
 .success {
@@ -381,8 +400,8 @@ body {
 
 @media (max-width: 850px) {
   .valores__section {
-    grid-template-columns: repeat(2, 150px);
-    grid-template-rows: repeat(4, 150px);
+    grid-template-columns: repeat(2, 120px);
+    grid-template-rows: repeat(4, 120px);
   }
   .valores__section div:nth-child(1) {
     grid-column: 1/2;
@@ -402,6 +421,9 @@ body {
   .valores__section div:nth-child(4) {
     grid-column: 2/3;
     grid-row: 4/5;
+  }
+  .valores img {
+    width: 80%;
   }
 }
 .vision {
@@ -441,6 +463,9 @@ body {
     flex-direction: column;
     padding: 75px;
   }
+  .vision p {
+    width: 80vw;
+  }
 }
 .mision {
   display: flex;
@@ -448,9 +473,9 @@ body {
   align-items: center;
   flex-direction: row;
   gap: 1rem;
-  max-width: 100vw;
-  height: 600px;
-  padding: 150px;
+  margin: 7rem auto;
+  padding: 75x;
+  width: 100%;
 }
 .mision div {
   display: flex;
@@ -480,6 +505,9 @@ body {
   .mision {
     flex-direction: column-reverse;
     padding: 75px;
+  }
+  .mision p {
+    width: 80vw;
   }
 }
 .com-interna {

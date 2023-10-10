@@ -42,13 +42,36 @@ body {
     place-self: start;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1160px) {
     .index__tittles {
         grid-template-rows: repeat(5, 100px);
 
         &-p {
-            font-size: 2.8rem;
+            font-size: 2.6rem;
+            padding-left: 30px;
         }
+    }
+}
+
+@media (max-width: 991px) {
+    .index__tittles {
+        grid-template-rows: repeat(5, 100px);
+
+        &-p {
+            font-size: 2.6rem;
+            padding-left: 30px;
+        }
+    }
+
+    .index__logo {
+        width: 100%;
+        grid-column: 3/4;
+        grid-row: -3/-1;
+        place-self: end;
+    }
+
+    main {
+        padding: 130px;
     }
 }
 
@@ -87,7 +110,7 @@ body {
     padding: 2.5px;
     background-clip: content-box;
     // animation: spin 10s linear infinite;
-    animation: spin 15s cubic-bezier(0.46, 2.02, 0, -0.21);
+    animation: spin 15s cubic-bezier(0.46, 2.02, 0, -0.21) infinite;
 }
 
 .success {
@@ -117,14 +140,6 @@ body {
         transform: rotateZ(360deg);
     }
 }
-
-// .page-wrapper {
-//     height: 100vh;
-//     background-color: #eee;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-// }
 
 //*MAIN
 .valores {
@@ -190,8 +205,8 @@ body {
 @media (max-width: 850px) {
     .valores {
         &__section {
-            grid-template-columns: repeat(2, 150px);
-            grid-template-rows: repeat(4, 150px);
+            grid-template-columns: repeat(2, 120px);
+            grid-template-rows: repeat(4, 120px);
 
             div:nth-child(1) {
                 grid-column: 1/2;
@@ -217,6 +232,10 @@ body {
                 grid-row: 4/5;
             }
         }
+
+        img {
+            width: 80%;
+        }
     }
 }
 
@@ -227,7 +246,6 @@ body {
     background-color: lightgrey;
     padding: 150px;
     width: 100%;
-
 
     div {
         @include flex(center, start, column, 2rem);
@@ -253,18 +271,20 @@ body {
 @media (max-width: 998px) {
     .vision {
         flex-direction: column;
-        padding: 75px
+        padding: 75px;
+
+        p {
+            width: 80vw;
+        }
     }
 }
-
 
 //*MISION
 .mision {
     @include flex(center, center, row, 1rem);
-    // margin: 60px auto 120px;
-    max-width: 100vw;
-    height: 600px;
-    padding: 150px;
+    margin: $marginSection auto;
+    padding: 75x;
+    width: 100%;
 
     div {
         @include flex(center, center, column, 2rem);
@@ -294,7 +314,11 @@ body {
 @media (max-width: 998px) {
     .mision {
         flex-direction: column-reverse;
-        padding: 75px
+        padding: 75px;
+
+        p {
+            width: 80vw;
+        }
     }
 }
 
@@ -480,7 +504,6 @@ body {
         .fake-m {
             right: -100px;
             top: -50px;
-
         }
     }
 }
