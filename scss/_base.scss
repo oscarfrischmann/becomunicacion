@@ -8,6 +8,10 @@
     --bs-gutter-x: 0;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 .container-fluid {
     --bs-gutter-x: 0rem;
 }

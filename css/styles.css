@@ -8,6 +8,10 @@
   --bs-gutter-x: 0;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 .container-fluid {
   --bs-gutter-x: 0rem;
 }
@@ -31,7 +35,7 @@ header {
 
 .navbar {
   position: relative;
-  top: -60px;
+  top: -61px;
 }
 
 .nav-link {
@@ -268,6 +272,9 @@ body {
 @media (max-width: 1100px) {
   .index__tittles {
     grid-template-rows: repeat(5, 100px);
+  }
+  .index__tittles-p {
+    font-size: 2.8rem;
   }
 }
 .dropdown-menu.show {
