@@ -1,5 +1,18 @@
 body {
-    background: #161f37;
+    background: rgb(22, 31, 55);
+    background: -moz-linear-gradient(90deg,
+            rgba(22, 31, 55, 1) 0%,
+            rgba(36, 44, 66, 1) 8%,
+            rgba(22, 31, 55, 1) 60%);
+    background: -webkit-linear-gradient(90deg,
+            rgba(22, 31, 55, 1) 0%,
+            rgba(36, 44, 66, 1) 8%,
+            rgba(22, 31, 55, 1) 60%);
+    background: linear-gradient(90deg,
+            rgba(22, 31, 55, 1) 0%,
+            rgba(36, 44, 66, 1) 8%,
+            rgba(22, 31, 55, 1) 60%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#161f37", endColorstr="#161f37", GradientType=1);
     overflow-x: hidden;
 }
 
@@ -147,12 +160,12 @@ body {
     flex-direction: column;
     margin: 0 auto;
 
-    h2 {
+    &__h2 {
         color: white;
         text-transform: capitalize;
-        font-size: 2.5rem;
-        font-weight: 600;
+        font-size: 3rem;
         text-align: center;
+        font-family: 'Avenir';
     }
 
     img {
@@ -242,8 +255,21 @@ body {
 //*VISION
 .vision {
     @include flex(center, center, row, 1rem);
-    margin: $marginSection auto;
-    background-color: lightgrey;
+    // margin: $marginSection auto;
+    background-color: #d3d3d3;
+    background: -moz-linear-gradient(90deg,
+            rgba(211, 211, 211, 1) 0%,
+            rgba(242, 242, 242, 1) 8%,
+            rgba(211, 211, 211, 1) 60%);
+    background: -webkit-linear-gradient(90deg,
+            rgba(211, 211, 211, 1) 0%,
+            rgba(242, 242, 242, 1) 8%,
+            rgba(211, 211, 211, 1) 60%);
+    background: linear-gradient(90deg,
+            rgba(211, 211, 211, 1) 0%,
+            rgba(242, 242, 242, 1) 8%,
+            rgba(211, 211, 211, 1) 60%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d3d3d3", endColorstr="#d3d3d3", GradientType=1);
     padding: 150px;
     width: 100%;
 
@@ -253,16 +279,18 @@ body {
     }
 
     &__img {
-        width: 400px;
+        width: 350px;
+        min-width: 350px;
     }
 
-    h2,
+    &__h2,
     p {
         color: $bg-color;
         font-size: 1.3rem;
     }
 
-    h2 {
+    &__h2 {
+        font-family: 'Avenir';
         text-transform: capitalize;
         font-size: 3rem;
     }
@@ -282,9 +310,15 @@ body {
 //*MISION
 .mision {
     @include flex(center, center, row, 1rem);
-    margin: $marginSection auto;
-    padding: 75x;
+    // margin: $marginSection auto;
+    padding: 150px;
     width: 100%;
+    position: relative;
+
+    #mision {
+        position: absolute;
+        top: -165px;
+    }
 
     div {
         @include flex(center, center, column, 2rem);
@@ -296,14 +330,15 @@ body {
         min-width: 350px;
     }
 
-    h2,
+    &__h2,
     p {
         color: white;
         font-size: 1.3rem;
         text-align: end;
     }
 
-    h2 {
+    &__h2 {
+        font-family: 'Avenir';
         text-transform: capitalize;
         font-size: 3rem;
         place-self: end;
@@ -325,6 +360,24 @@ body {
 //*COMUNICACION INTERNA
 .com-interna {
     padding-top: 100px;
+    background-color: #d3d3d3;
+    color: $bg-color;
+
+    &.interna {
+        background: -moz-linear-gradient(90deg,
+                rgba(211, 211, 211, 1) 0%,
+                rgba(242, 242, 242, 1) 8%,
+                rgba(211, 211, 211, 1) 60%);
+        background: -webkit-linear-gradient(90deg,
+                rgba(211, 211, 211, 1) 0%,
+                rgba(242, 242, 242, 1) 8%,
+                rgba(211, 211, 211, 1) 60%);
+        background: linear-gradient(90deg,
+                rgba(211, 211, 211, 1) 0%,
+                rgba(242, 242, 242, 1) 8%,
+                rgba(211, 211, 211, 1) 60%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d3d3d3", endColorstr="#d3d3d3", GradientType=1);
+    }
 
     &__article {
         display: grid;
@@ -335,6 +388,8 @@ body {
         position: relative;
 
         h2 {
+            font-family: 'Avenir';
+            font-size: 3rem;
             grid-column: span 3;
             padding-bottom: 30px;
         }
@@ -349,7 +404,7 @@ body {
         img {
             width: 150%;
             // justify-self: span 2;
-            transform: translate(180px, -50px);
+            transform: translate(38px, -105px);
         }
     }
 
@@ -363,10 +418,43 @@ body {
     }
 }
 
+@media (max-width: 942px) {
+    .com-interna {
+        &.interna {
+            img {
+                transform: translate(0, 0);
+                width: 80%;
+                margin: 0 auto 1rem auto;
+                grid-column: 1/4;
+                grid-row: 3/4;
+            }
+        }
+
+        &__ul {
+            grid-column: 1/4;
+            width: 100%;
+            padding-bottom: $marginSection;
+        }
+    }
+}
+
 //*COMUNICACION EMOCIONAL
 
 .com-interna.emocional {
     color: white;
+    background: -moz-linear-gradient(90deg,
+            rgba(22, 31, 55, 1) 0%,
+            rgba(36, 44, 66, 1) 8%,
+            rgba(22, 31, 55, 1) 60%);
+    background: -webkit-linear-gradient(90deg,
+            rgba(22, 31, 55, 1) 0%,
+            rgba(36, 44, 66, 1) 8%,
+            rgba(22, 31, 55, 1) 60%);
+    background: linear-gradient(90deg,
+            rgba(22, 31, 55, 1) 0%,
+            rgba(36, 44, 66, 1) 8%,
+            rgba(22, 31, 55, 1) 60%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#161f37", endColorstr="#161f37", GradientType=1);
 
     ul {
         grid-column: 1/3;
@@ -390,9 +478,44 @@ body {
     }
 }
 
+@media (max-width: 942px) {
+    .com-interna.emocional {
+        &.emocional {
+            img {
+                transform: translate(0, 0);
+                width: 80%;
+                margin: 0 auto 1rem auto;
+                grid-column: 1/4;
+                grid-row: 3/4;
+            }
+        }
+
+        ul {
+            grid-column: 1/4;
+            grid-row: 4/5;
+
+            width: 100%;
+            padding-bottom: $marginSection;
+        }
+    }
+}
+
 //*COMUNICACION EXTERNA
 .com-interna.externa {
     color: $bg-color;
+    background: -moz-linear-gradient(90deg,
+            rgba(211, 211, 211, 1) 0%,
+            rgba(242, 242, 242, 1) 8%,
+            rgba(211, 211, 211, 1) 60%);
+    background: -webkit-linear-gradient(90deg,
+            rgba(211, 211, 211, 1) 0%,
+            rgba(242, 242, 242, 1) 8%,
+            rgba(211, 211, 211, 1) 60%);
+    background: linear-gradient(90deg,
+            rgba(211, 211, 211, 1) 0%,
+            rgba(242, 242, 242, 1) 8%,
+            rgba(211, 211, 211, 1) 60%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d3d3d3", endColorstr="#d3d3d3", GradientType=1);
 
     div {
         grid-column: 1/4;
@@ -441,6 +564,8 @@ body {
     }
 
     h2 {
+        font-family: 'Avenir';
+        font-size: 3rem;
         text-transform: capitalize;
         margin: 0 auto 50px auto;
     }

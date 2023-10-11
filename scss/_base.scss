@@ -8,9 +8,18 @@
     --bs-gutter-x: 0;
 }
 
-html {
-    overflow-x: hidden;
+@media (max-width: 505px) {
+    html {
+        overflow-x: hidden;
+    }
 }
+
+
+@font-face {
+    font-family: "Avenir";
+    src: url("../fonts/AvenirNext-Regular.ttf");
+}
+
 
 .container-fluid {
     --bs-gutter-x: 0rem;
