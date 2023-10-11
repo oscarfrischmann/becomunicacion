@@ -3,6 +3,7 @@
     padding-left: 60px;
 
     h2 {
+        font-family: "Avenir";
         color: $primaryColor;
         font-weight: 700;
         font-size: 2rem;
@@ -74,5 +75,24 @@
 
         }
 
+    }
+}
+
+@media (max-width: 991px) {
+    .footer {
+        position: initial;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+        &__logo {
+            position: unset;
+        }
+
+        &__contact {
+            margin-top: 0;
+        }
     }
 }

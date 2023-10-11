@@ -103,6 +103,7 @@ main {
   padding-left: 60px;
 }
 .footer h2 {
+  font-family: "Avenir";
   color: #ea5736;
   font-weight: 700;
   font-size: 2rem;
@@ -170,6 +171,22 @@ main {
   margin-bottom: 21px;
 }
 
+@media (max-width: 991px) {
+  .footer {
+    position: initial;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .footer__logo {
+    position: unset;
+  }
+  .footer__contact {
+    margin-top: 0;
+  }
+}
 :root {
   --background: rgb(255, 255, 255);
   --primary: #ea5736;
@@ -663,6 +680,14 @@ body {
   margin-bottom: 100px;
 }
 
+@media (max-width: 942px) {
+  .com-interna.externa img {
+    width: 80%;
+  }
+  .com-interna.externa ul {
+    padding-bottom: 2rem;
+  }
+}
 .quienes-somos {
   display: flex;
   justify-content: center;
@@ -740,6 +765,17 @@ body {
   .quienes-somos .fake-m {
     right: -100px;
     top: -50px;
+  }
+}
+@media (max-width: 626px) {
+  .quienes-somos__aniela, .quienes-somos__manuel {
+    width: 80vw;
+    margin: 0 auto;
+  }
+  .quienes-somos .fake-a,
+  .quienes-somos .fake-m {
+    right: 33px;
+    top: -94px;
   }
 }
 

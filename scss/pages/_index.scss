@@ -551,6 +551,18 @@ body {
     }
 }
 
+@media (max-width: 942px) {
+    .com-interna.externa {
+        img {
+            width: 80%;
+        }
+
+        ul {
+            padding-bottom: 2rem;
+        }
+    }
+}
+
 //*QUIENES SOMOS
 
 .quienes-somos {
@@ -629,6 +641,24 @@ body {
         .fake-m {
             right: -100px;
             top: -50px;
+        }
+    }
+}
+
+@media (max-width: 626px) {
+    .quienes-somos {
+
+        &__aniela,
+        &__manuel {
+            width: 80vw;
+            margin: 0 auto;
+
+        }
+
+        .fake-a,
+        .fake-m {
+            right: 33px;
+            top: -94px;
         }
     }
 }
