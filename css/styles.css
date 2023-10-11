@@ -481,6 +481,7 @@ body {
 .vision__img {
   width: 350px;
   min-width: 350px;
+  filter: drop-shadow(10px 10px 10px grey);
 }
 .vision__h2,
 .vision p {
@@ -527,6 +528,9 @@ body {
 .mision__img {
   width: 350px;
   min-width: 350px;
+  border-radius: 20px;
+  background: linear-gradient(315deg, #141c32, #18213b);
+  box-shadow: -20px -20px 60px #131a2f, 20px 20px 60px #19243f;
 }
 .mision__h2,
 .mision p {
@@ -725,6 +729,7 @@ body {
 }
 .quienes-somos__tittles span:nth-child(1) {
   color: #ea5736;
+  font-size: 1.3em;
 }
 .quienes-somos__p {
   text-align: center;
@@ -735,6 +740,10 @@ body {
   position: relative;
   max-width: 400px;
   min-width: 349px;
+  padding: 15px;
+  border-radius: 20px;
+  background: linear-gradient(315deg, #141c32, #18213b);
+  box-shadow: -20px -20px 60px #131a2f, 20px 20px 60px #19243f;
 }
 .quienes-somos__manuel .fake-m {
   position: absolute;
@@ -748,6 +757,10 @@ body {
   position: relative;
   max-width: 400px;
   min-width: 349px;
+  padding: 15px;
+  border-radius: 20px;
+  background: linear-gradient(315deg, #141c32, #18213b);
+  box-shadow: -20px -20px 60px #131a2f, 20px 20px 60px #19243f;
 }
 .quienes-somos__aniela .fake-a {
   position: absolute;
@@ -771,6 +784,9 @@ body {
     right: -100px;
     top: -50px;
   }
+  .quienes-somos__p {
+    width: 80%;
+  }
 }
 @media (max-width: 626px) {
   .quienes-somos__aniela, .quienes-somos__manuel {
@@ -781,6 +797,9 @@ body {
   .quienes-somos .fake-m {
     right: 33px;
     top: -94px;
+  }
+  .quienes-somos__p {
+    width: 80%;
   }
 }
 

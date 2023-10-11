@@ -1,18 +1,17 @@
 const dropDownContainer = document.getElementById('navbarNavDropdown');
+
 const dropDownItem = document.querySelectorAll('.dropdown-item');
-
-console.log(dropDownItem);
-
 dropDownItem.forEach((e) => {
-	e.addEventListener('click', () => {
-		dropDownContainer.classList.remove('show');
-	});
+	closeNavbar(e);
 });
 
-const closeNavbar = document.querySelectorAll('.close-navbar');
-console.log(closeNavbar);
-closeNavbar.forEach((e) => {
+const navbarLinks = document.querySelectorAll('.close-navbar');
+navbarLinks.forEach((e) => {
+	closeNavbar(e);
+});
+
+function closeNavbar(e) {
 	e.addEventListener('click', () => {
 		dropDownContainer.classList.remove('show');
 	});
-});
+}
