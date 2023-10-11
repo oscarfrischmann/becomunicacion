@@ -303,10 +303,15 @@ body {
 .index__logo {
   width: 80%;
   grid-column: 3/4;
-  grid-row: -5/-1;
+  grid-row: -6/-4;
   place-self: start;
 }
 
+@media only screen and (min-width: 1161px) and (max-width: 1199px) {
+  .index__logo {
+    grid-row: -4/-2;
+  }
+}
 @media (max-width: 1160px) {
   .index__tittles {
     grid-template-rows: repeat(5, 100px);
@@ -344,6 +349,10 @@ body {
 }
 .dropdown-menu.show .dropdown-item:hover {
   background-color: rgba(255, 255, 255, 0.116);
+}
+
+.nav-link {
+  font-size: 1rem;
 }
 
 .circle-wrapper {
