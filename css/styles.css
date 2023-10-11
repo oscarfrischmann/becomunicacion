@@ -179,12 +179,16 @@ main {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    padding-left: 0;
+    margin-bottom: 7rem;
   }
   .footer__logo {
     position: unset;
   }
   .footer__contact {
     margin-top: 0;
+    width: 80%;
+    font-size: 1.1em;
   }
 }
 :root {
@@ -736,7 +740,6 @@ body {
   position: absolute;
   width: 150px;
   height: 150px;
-  border: 1px solid white;
   border-radius: 50%;
   right: 70px;
   top: -100px;
@@ -750,10 +753,12 @@ body {
   position: absolute;
   width: 150px;
   height: 150px;
-  border: 1px solid white;
   border-radius: 50%;
   right: 70px;
   top: -100px;
+}
+.quienes-somos img {
+  width: 100%;
 }
 
 @media (max-width: 768px) {
