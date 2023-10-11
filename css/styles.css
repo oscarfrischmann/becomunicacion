@@ -262,6 +262,14 @@ body {
   overflow-x: hidden;
 }
 
+@media (max-width: 768px) {
+  body {
+    background: -moz-linear-gradient(90deg, rgb(22, 31, 55) 0%, rgb(36, 44, 66) 23%, rgb(22, 31, 55) 100%);
+    background: -webkit-linear-gradient(90deg, rgb(22, 31, 55) 0%, rgb(36, 44, 66) 23%, rgb(22, 31, 55) 100%);
+    background: linear-gradient(90deg, rgb(22, 31, 55) 0%, rgb(36, 44, 66) 23%, rgb(22, 31, 55) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#161f37", endColorstr="#161f37", GradientType=1);
+  }
+}
 .index__tittles {
   position: relative;
   display: grid;
@@ -329,7 +337,7 @@ body {
 .dropdown-menu.show {
   background-color: #161f37;
   border: none;
-  top: 117%;
+  top: 119%;
 }
 .dropdown-menu.show .dropdown-item {
   color: #ea5736;
