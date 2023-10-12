@@ -20,6 +20,11 @@
         row-gap: 10px;
         column-gap: 10px;
         margin-top: 60px;
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
     }
 
     &__social {
