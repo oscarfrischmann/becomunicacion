@@ -30,12 +30,3 @@ logoSimple.addEventListener('click', () => {
 		logoSimple.classList.toggle('animate__bounceInDown');
 	}, 1000);
 });
-
-(function getResolution() {
-	console.log(`
-	Hola Aniela!!!
-	
-	  Ancho: ${window.screen.width}
-	  Alto: ${window.screen.height}
-	`);
-})();

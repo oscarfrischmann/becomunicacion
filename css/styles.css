@@ -335,6 +335,7 @@ body {
     grid-column: 3/4;
     grid-row: -3/-1;
     place-self: end;
+    transform: translateY(0px);
   }
   main {
     padding: 130px;
@@ -529,6 +530,11 @@ body {
   font-size: 3rem;
 }
 
+@media (max-width: 1280px) {
+  #vision {
+    transform: translateY(69px);
+  }
+}
 @media (max-width: 998px) {
   .vision {
     flex-direction: column;
