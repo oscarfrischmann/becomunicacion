@@ -71,6 +71,7 @@ body {
     grid-column: 3/4;
     grid-row: -6/-4;
     place-self: start;
+    transform: translateY(140px);
 }
 
 @media only screen and (min-width: 1161px) and (max-width: 1199px) {
@@ -131,7 +132,6 @@ body {
 .nav-link {
     font-size: 1rem;
 }
-
 
 //*NUESTROS VALORES
 //*ANIMACION
@@ -240,6 +240,27 @@ body {
             grid-column: 4/5;
             grid-row: 2/3;
         }
+    }
+}
+
+@media (max-width: 1280px) {
+    .circle-wrapper {
+        width: 150px;
+        height: 150px;
+        margin: 0;
+    }
+
+    .valores .inner {
+        font-size: 1rem;
+    }
+
+    .valores__h2 {
+        font-size: 2rem;
+    }
+
+    .valores__section {
+        grid-template-columns: repeat(4, 129px);
+        grid-template-rows: repeat(2, 100px);
     }
 }
 
@@ -448,7 +469,6 @@ body {
         z-index: 2;
         line-height: 1.5rem;
         list-style-type: square;
-
     }
 }
 
