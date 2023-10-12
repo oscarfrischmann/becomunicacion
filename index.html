@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
@@ -77,41 +78,42 @@
             <h2 class="index__tittles-h2">
                 Comunicación Organizacional <br />y Relaciones Institucionales
             </h2>
-            <p class="index__tittles-p">
+            <p class="index__tittles-p animate__animated animate__backInLeft animate__slow">
                 Soluciones holísticas, ágiles y <br />transformadoras
             </p>
-            <img src="./img/Logo-fondo-oscuro.png" class="index__logo" alt="" />
+            <img src="./img/Logo-fondo-oscuro.png"
+                class="index__logo animate__fadeInDown animate__animated animate__delay-2s" alt="" />
         </section>
 
         <div style="height: 13vh" id="valores"></div>
         <section class="valores">
             <h2 class="valores__h2">nuestros valores</h2>
 
-            <section class="valores__section container">
-                <div class="circle-wrapper">
+            <article class="valores__section container">
+                <div class="circle-wrapper" data-aos="fade-right" data-aos-duration="1000">
                     <div class="success circle"></div>
                     <div class="inner">colaboración</div>
                 </div>
-                <div class="circle-wrapper">
+                <div class="circle-wrapper" data-aos="fade-up" data-aos-duration="1000">
                     <div class="success circle"></div>
                     <div class="inner">adaptabilidad</div>
                 </div>
-                <div class="circle-wrapper">
+                <div class="circle-wrapper" data-aos="fade-down" data-aos-duration="1000">
                     <div class="success circle"></div>
                     <div class="inner">equilibrio</div>
                 </div>
-                <div class="circle-wrapper">
+                <div class="circle-wrapper" data-aos="fade-left" data-aos-duration="1000">
                     <div class="success circle"></div>
                     <div class="inner">transparencia</div>
                 </div>
-            </section>
+            </article>
             <img src="img/nuestros_valores-becomunicacion.svg" alt="" />
         </section>
 
         <div style="height: 120px" id="vision"></div>
         <section class="vision" id="">
             <div class="row g-0">
-                <h2 class="vision__h2">visión</h2>
+                <h2 class="vision__h2" data-aos="fade-right" data-aos-duration="1000">visión</h2>
                 <p class="vision__p">
                     Creemos que las personas, los escenarios y los desafíos que enfrenta una
                     organización están en constante transformación. Adaptarnos para ser
@@ -122,14 +124,15 @@
                     eficaces.
                 </p>
             </div>
-            <img src="./img/LogoLINEAL-mix.png" class="vision__img" alt="" />
+            <img src="./img/LogoLINEAL-mix.png" class="vision__img" alt="" data-aos="zoom-in"
+                data-aos-duration="1000" />
         </section>
 
         <section class="mision" id="">
             <div id="mision"></div>
-            <img src="../img/Logo-BLANCO.png" class="mision__img" alt="" />
+            <img src="../img/Logo-BLANCO.png" class="mision__img" alt="" data-aos="zoom-in" data-aos-duration="1000" />
             <div class="row g-0">
-                <h2 class="mision__h2">misión</h2>
+                <h2 class="mision__h2" data-aos="fade-left" data-aos-duration="1000">misión</h2>
                 <p class="mision__p">
                     Nuestro propósito es brindar herramientas comunicacionales efectivas a
                     líderes y equipos de trabajo para que puedan potenciar sus habilidades,
@@ -214,7 +217,8 @@
         <section class="quienes-somos container-fluid">
             <h2>quiénes somos</h2>
             <article class="container">
-                <div class="quienes-somos__manuel">
+                <div class="quienes-somos__manuel" data-aos="flip-right" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" data-aos-duration="500">
                     <!-- <img src="" alt="" /> -->
                     <div class="fake-m">
                         <img src="./img/manu-becomunicacion-ligth.png" alt="" />
@@ -234,7 +238,8 @@
                         sobre los mensajes.
                     </p>
                 </div>
-                <div class="quienes-somos__aniela">
+                <div class="quienes-somos__aniela" data-aos="flip-left" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" data-aos-duration="500">
                     <!-- <img src="" alt="" /> -->
                     <div class="fake-a">
                         <img src="./img/ani-becomunicacion.png" alt="" />
@@ -274,7 +279,6 @@
             <span>consultas@becomunicacion.com.ar</span>
         </div>
         <div class="footer__social">
-            <span>social</span>
             <a href="https://www.facebook.com/profile.php?id=61550932923098&mibextid=LQQJ4d" target="_blank"><i
                     class="bi bi-facebook"></i></a>
             <a href="https://www.instagram.com/be_comunicacion/" target="_blank"><i class="bi bi-instagram"></i></a>
@@ -288,7 +292,10 @@
         <p><a href="https://www.linkedin.com/in/oscar-frischmann-3a8806272/" target="_blank">OF</a></p>
         <p>frontend</p>
     </div> -->
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./js/main.js"></script>
 </body>

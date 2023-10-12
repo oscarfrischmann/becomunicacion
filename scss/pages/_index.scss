@@ -72,6 +72,7 @@ body {
     grid-row: -6/-4;
     place-self: start;
     transform: translateY(140px);
+    filter: drop-shadow(10px 10px 10px rgb(0, 0, 0));
 }
 
 @media only screen and (min-width: 1161px) and (max-width: 1199px) {
@@ -183,7 +184,6 @@ body {
     }
 }
 
-//*MAIN
 .valores {
     display: flex;
     flex-direction: column;
@@ -201,6 +201,7 @@ body {
         width: 30%;
         align-self: center;
         transform: translateY(-100px);
+        filter: drop-shadow(10px 10px 10px rgb(0, 0, 0));
     }
 
     .inner {
@@ -385,9 +386,7 @@ body {
     &__img {
         width: 350px;
         min-width: 350px;
-        border-radius: 20px;
-        background: linear-gradient(315deg, #141c32, #18213b);
-        box-shadow: -20px -20px 60px #131a2f, 20px 20px 60px #19243f;
+        filter: drop-shadow(10px 10px 10px rgb(0, 0, 0))
     }
 
     &__h2,
@@ -465,6 +464,7 @@ body {
             width: 150%;
             // justify-self: span 2;
             transform: translate(38px, -105px);
+            filter: drop-shadow(10px 10px 10px grey);
         }
     }
 
@@ -530,6 +530,8 @@ body {
         place-self: center;
         margin-top: 100px;
         margin-bottom: 100px;
+        filter: drop-shadow(10px 10px 10px rgb(0, 0, 0));
+
     }
 }
 
