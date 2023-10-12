@@ -446,7 +446,9 @@ body {
         width: 70%;
         font-size: 1.1rem;
         z-index: 2;
-        line-height: 2rem;
+        line-height: 1.5rem;
+        list-style-type: square;
+
     }
 }
 
@@ -640,6 +642,7 @@ body {
         border-radius: 20px;
         background: linear-gradient(315deg, #141c32, #18213b);
         box-shadow: -20px -20px 60px #131a2f, 20px 20px 60px #19243f;
+        align-self: stretch;
 
         .fake-m {
             position: absolute;

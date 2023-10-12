@@ -34,7 +34,7 @@ header {
 .logo-simple {
   width: 150px;
   position: relative;
-  top: -30px;
+  top: -16px;
   z-index: 100;
 }
 
@@ -612,7 +612,8 @@ body {
   width: 70%;
   font-size: 1.1rem;
   z-index: 2;
-  line-height: 2rem;
+  line-height: 1.5rem;
+  list-style-type: square;
 }
 
 @media (max-width: 942px) {
@@ -761,6 +762,7 @@ body {
   border-radius: 20px;
   background: linear-gradient(315deg, #141c32, #18213b);
   box-shadow: -20px -20px 60px #131a2f, 20px 20px 60px #19243f;
+  align-self: stretch;
 }
 .quienes-somos__manuel .fake-m {
   position: absolute;
