@@ -30,3 +30,4 @@ logoSimple.addEventListener('click', () => {
 		logoSimple.classList.toggle('animate__bounceInDown');
 	}, 1000);
 });
+AOS.init();
