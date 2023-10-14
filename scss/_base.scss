@@ -7,6 +7,7 @@
 
 :root {
     --bs-gutter-x: 0;
+    --animate-delay: 0.5s;
 }
 
 @media (max-width: 505px) {
@@ -44,3 +45,8 @@ $secondaryColor: #b9c108;
 $bg-color: #161f37;
 
 $marginSection: 7rem;
+
+//* ANIMATIONS
+.opacity0 {
+    opacity: 0;
+}
