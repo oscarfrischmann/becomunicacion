@@ -313,7 +313,7 @@ body {
   grid-row: -6/-4;
   place-self: start;
   transform: translateY(140px);
-  filter: drop-shadow(10px 10px 10px rgb(0, 0, 0));
+  filter: drop-shadow(10px 10px 10px rgb(22, 22, 22));
 }
 
 @media only screen and (min-width: 1161px) and (max-width: 1199px) {
@@ -422,7 +422,7 @@ body {
   width: 30%;
   align-self: center;
   transform: translateY(-100px);
-  filter: drop-shadow(10px 10px 10px rgb(0, 0, 0));
+  filter: drop-shadow(10px 10px 10px rgb(22, 22, 22));
 }
 .valores .inner {
   text-transform: uppercase;
@@ -580,7 +580,7 @@ body {
 .mision__img {
   width: 350px;
   min-width: 350px;
-  filter: drop-shadow(10px 10px 10px rgb(0, 0, 0));
+  filter: drop-shadow(10px 10px 10px rgb(22, 22, 22));
 }
 .mision__h2,
 .mision p {
@@ -683,7 +683,7 @@ body {
   place-self: center;
   margin-top: 100px;
   margin-bottom: 100px;
-  filter: drop-shadow(10px 10px 10px rgb(0, 0, 0));
+  filter: drop-shadow(10px 10px 10px rgb(22, 22, 22));
 }
 .com-interna.emocional h2 {
   border-radius: 20px;
@@ -692,7 +692,7 @@ body {
   width: fit-content;
   padding: 20px;
   margin: 0 auto 10px auto;
-  text-shadow: 2px 2px 10px;
+  text-shadow: 0px 0px 10px;
 }
 
 @media (max-width: 1480px) {
