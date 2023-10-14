@@ -572,6 +572,11 @@ body {
             width: 100%;
             padding-bottom: $marginSection;
         }
+
+        h2 {
+            font-size: 1.5rem;
+            white-space: nowrap;
+        }
     }
 }
 

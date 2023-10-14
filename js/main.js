@@ -1,6 +1,5 @@
 const dropDownContainer = document.getElementById('navbarNavDropdown');
 const valoresH2 = document.querySelector('.valores__h2');
-console.log(valoresH2);
 const dropDownItem = document.querySelectorAll('.dropdown-item');
 dropDownItem.forEach((e) => {
 	closeNavbar(e);
@@ -46,16 +45,19 @@ function animations(domObject, animationRemove, animationAdd) {
 	});
 }
 
+//* titulos nuestros valores - comunicacion.interna.emocional.externa
 const tittlesInRigth = document.querySelectorAll('.in-rigth');
 window.addEventListener('scroll', () => {
 	animations(tittlesInRigth, 'animate__fadeOutRight', 'animate__fadeInRight');
 });
 
+//*about us cards flip
 const flipY = document.querySelectorAll('.quienes-somos__card');
 window.addEventListener('scroll', () => {
 	animations(flipY, 'animate__flipOutY', 'animate__flipInY');
 });
 
+//*logos
 const fadeInDown = document.querySelectorAll('.in-down');
 window.addEventListener('scroll', () => {
 	animations(fadeInDown, 'animate__fadeOutUp', 'animate__fadeInDown');
