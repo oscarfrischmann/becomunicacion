@@ -39,6 +39,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(6, 100px);
+    padding-top: 100px;
 
     &-h2 {
         font-size: 1.8rem;
@@ -107,7 +108,7 @@ body {
         grid-column: 3/4;
         grid-row: -3/-1;
         place-self: end;
-        transform: translateY(0px)
+        transform: translateY(0px);
     }
 
     main {
@@ -188,6 +189,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    padding-top: 70px;
 
     &__h2 {
         color: white;
@@ -195,6 +197,7 @@ body {
         font-size: 3rem;
         text-align: center;
         font-family: 'Avenir';
+        transition: transform 2s ease;
     }
 
     img {
@@ -386,7 +389,7 @@ body {
     &__img {
         width: 350px;
         min-width: 350px;
-        filter: drop-shadow(10px 10px 10px rgb(0, 0, 0))
+        filter: drop-shadow(10px 10px 10px rgb(0, 0, 0));
     }
 
     &__h2,
@@ -531,7 +534,16 @@ body {
         margin-top: 100px;
         margin-bottom: 100px;
         filter: drop-shadow(10px 10px 10px rgb(0, 0, 0));
+    }
 
+    h2 {
+        border-radius: 20px;
+        background: linear-gradient(315deg, #141c32, #18213b);
+        box-shadow: -20px -20px 60px #131a2f, 20px 20px 60px #19243f;
+        width: fit-content;
+        padding: 20px;
+        margin: 0 auto 10px auto;
+        text-shadow: 2px 2px 10px;
     }
 }
 
