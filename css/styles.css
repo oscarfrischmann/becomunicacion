@@ -281,7 +281,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(6, 100px);
-  padding-top: 100px;
+  padding-top: 40px;
 }
 .index__tittles-h2 {
   font-size: 1.8rem;
@@ -780,7 +780,7 @@ body {
   margin-top: 50px;
 }
 .quienes-somos h2 {
-  font-family: "Avenir";
+  font-family: "Avenir", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 3rem;
   text-transform: capitalize;
   margin: 0 auto 50px auto;
