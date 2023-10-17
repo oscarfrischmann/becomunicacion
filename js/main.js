@@ -111,12 +111,12 @@ window.addEventListener('scroll', () => {
 
 //*list type image
 
-const allMainLi = document.querySelectorAll('main li');
-allMainLi.forEach((e) => {
-	const listIconImg = document.createElement('img');
-	listIconImg.className = 'list-icon';
-	e.insertAdjacentElement('afterbegin', listIconImg).setAttribute(
-		'src',
-		'../../img/logo-simple.png'
-	);
-});
+// const allMainLi = document.querySelectorAll('main li');
+// allMainLi.forEach((e) => {
+// 	const listIconImg = document.createElement('img');
+// 	listIconImg.className = 'list-icon';
+// 	e.insertAdjacentElement('afterbegin', listIconImg).setAttribute(
+// 		'src',
+// 		'../../img/logo-simple.png'
+// 	);
+// });
