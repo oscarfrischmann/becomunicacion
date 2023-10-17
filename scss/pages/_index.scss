@@ -95,6 +95,10 @@ body {
             font-size: 2.6rem;
             padding-left: 30px;
         }
+
+        &-h2 {
+            padding-left: 30px;
+        }
     }
 }
 
@@ -106,6 +110,8 @@ body {
             font-size: 2.6rem;
             padding-left: 30px;
         }
+
+
     }
 
     .index__logo {
@@ -477,7 +483,6 @@ body {
             font-size: 3rem;
             grid-column: span 3;
             padding-bottom: 30px;
-
         }
 
         h3 {
@@ -485,7 +490,6 @@ body {
             font-weight: 400;
             font-size: 1.3rem;
             padding-bottom: 30px;
-
         }
 
         img {
@@ -572,7 +576,6 @@ body {
         // background: linear-gradient(315deg, #141c32, #18213b);
         // box-shadow: -20px -20px 60px #131a2f, 20px 20px 60px #19243f;
         width: fit-content;
-        padding: 20px;
         margin: 0 auto 10px auto;
     }
 }
@@ -601,11 +604,6 @@ body {
 
             width: 100%;
             padding-bottom: $marginSection;
-        }
-
-        h2 {
-            font-size: 1.5rem;
-            white-space: nowrap;
         }
     }
 }

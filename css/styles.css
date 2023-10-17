@@ -340,6 +340,9 @@ body {
     font-size: 2.6rem;
     padding-left: 30px;
   }
+  .index__tittles-h2 {
+    padding-left: 30px;
+  }
 }
 @media (max-width: 991px) {
   .index__tittles {
@@ -717,7 +720,6 @@ body {
 }
 .com-interna.emocional h2 {
   width: fit-content;
-  padding: 20px;
   margin: 0 auto 10px auto;
 }
 
@@ -739,10 +741,6 @@ body {
     grid-row: 4/5;
     width: 100%;
     padding-bottom: 7rem;
-  }
-  .com-interna.emocional h2 {
-    font-size: 1.5rem;
-    white-space: nowrap;
   }
 }
 .com-interna.externa {
