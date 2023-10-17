@@ -381,6 +381,8 @@ body {
   width: 200px;
   height: 200px;
   margin: 10px;
+  border-radius: 50%;
+  box-shadow: 9px 4px 20px 10px rgb(24, 24, 24);
 }
 
 .circle {
@@ -398,6 +400,7 @@ body {
   border: 0.3rem solid #ea5736;
   outline-offset: 4px;
   transition: all 8s ease-in-out;
+  box-shadow: inset 9px 4px 20px 0px rgb(24, 24, 24);
 }
 .success:hover {
   transform: rotate(360deg);
@@ -437,8 +440,8 @@ body {
 }
 .valores .inner {
   text-transform: uppercase;
-  color: #ea5736;
   font-size: 1.4rem;
+  text-shadow: 3px 3px 10px #000000;
 }
 .valores__section {
   display: grid;
@@ -710,13 +713,9 @@ body {
   filter: drop-shadow(10px 10px 10px rgb(22, 22, 22));
 }
 .com-interna.emocional h2 {
-  border-radius: 20px;
-  background: linear-gradient(315deg, #141c32, #18213b);
-  box-shadow: -20px -20px 60px #131a2f, 20px 20px 60px #19243f;
   width: fit-content;
   padding: 20px;
   margin: 0 auto 10px auto;
-  text-shadow: 0px 0px 10px;
 }
 
 @media (max-width: 1480px) {
@@ -773,7 +772,7 @@ body {
 .com-interna.externa img {
   grid-column: 1/4;
   place-self: center;
-  width: 44%;
+  width: 40%;
   transform: translate(0, 0);
   margin-bottom: 100px;
 }
