@@ -542,7 +542,7 @@ body {
 
 @media (max-width: 1280px) {
   #vision {
-    transform: translateY(69px);
+    transform: translateY(150px);
   }
 }
 @media (max-width: 998px) {
@@ -594,6 +594,11 @@ body {
   place-self: end;
 }
 
+@media (max-width: 1280px) {
+  #mision {
+    transform: translateY(145px);
+  }
+}
 @media (max-width: 998px) {
   .mision {
     flex-direction: column-reverse;
@@ -649,6 +654,11 @@ body {
   list-style-type: square;
 }
 
+@media (max-width: 1280px) {
+  #comInterna {
+    transform: translateY(80px);
+  }
+}
 @media (max-width: 942px) {
   .com-interna.interna img {
     transform: translate(0, 0);

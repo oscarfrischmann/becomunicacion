@@ -353,7 +353,7 @@ body {
 
 @media (max-width: 1280px) {
     #vision {
-        transform: translateY(69px);
+        transform: translateY(150px);
     }
 }
 
@@ -405,6 +405,12 @@ body {
         font-size: 3rem;
         place-self: end;
         // padding-right: 100px;
+    }
+}
+
+@media (max-width:1280px) {
+    #mision {
+        transform: translateY(145px);
     }
 }
 
@@ -479,6 +485,12 @@ body {
         z-index: 2;
         line-height: 1.5rem;
         list-style-type: square;
+    }
+}
+
+@media (max-width: 1280px) {
+    #comInterna {
+        transform: translateY(80px);
     }
 }
 

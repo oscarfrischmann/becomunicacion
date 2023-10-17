@@ -81,9 +81,11 @@ window.addEventListener('scroll', () => {
 	// if (internaLi.includes('fadeInRight')) {
 	// 	console.log('despegaa');
 	// }
+	console.log(
+		internaLi[0].classList.value === 'animate__animated animate__fadeInRight'
+	);
 });
 console.log(internaLi[0]);
-console.log(internaLi[0].classList);
 
 const emocionalLi = document.querySelectorAll(' .com-interna__ul.second > li');
 emocionalLi.forEach((e, i) => {
