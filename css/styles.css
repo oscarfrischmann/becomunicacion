@@ -281,7 +281,6 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(6, 100px);
-  padding-top: 40px;
 }
 .index__tittles-h2 {
   font-size: 1.8rem;

@@ -69,6 +69,7 @@ window.addEventListener('scroll', () => {
 });
 
 const internaLi = document.querySelectorAll(' .com-interna__ul.first > li');
++console.log(internaLi);
 internaLi.forEach((e, i) => {
 	e.classList.add('animate__animated');
 	e.style.setProperty('--animate-delay', `${i * 1000 + 1000}ms`);
@@ -77,7 +78,12 @@ internaLi.forEach((e, i) => {
 
 window.addEventListener('scroll', () => {
 	animations(internaLi, 'animate__fadeOutRight', 'animate__fadeInRight');
+	// if (internaLi.includes('fadeInRight')) {
+	// 	console.log('despegaa');
+	// }
 });
+console.log(internaLi[0]);
+console.log(internaLi[0].classList);
 
 const emocionalLi = document.querySelectorAll(' .com-interna__ul.second > li');
 emocionalLi.forEach((e, i) => {
