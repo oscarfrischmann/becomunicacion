@@ -108,3 +108,15 @@ externaLi.forEach((e, i) => {
 window.addEventListener('scroll', () => {
 	animations(externaLi, 'animate__fadeOutLeft', 'animate__fadeInLeft');
 });
+
+//*list type image
+
+const allMainLi = document.querySelectorAll('main li');
+allMainLi.forEach((e) => {
+	const listIconImg = document.createElement('img');
+	listIconImg.className = 'list-icon';
+	e.insertAdjacentElement('afterbegin', listIconImg).setAttribute(
+		'src',
+		'../../img/logo-simple.png'
+	);
+});

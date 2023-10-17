@@ -76,6 +76,12 @@ body {
     filter: drop-shadow(10px 10px 10px rgb(22, 22, 22));
 }
 
+@media (max-width:1280px) {
+    .index__tittles {
+        transform: translateY(-70px);
+    }
+}
+
 @media only screen and (min-width: 1161px) and (max-width: 1199px) {
     .index__logo {
         grid-row: -4/-2;
@@ -112,7 +118,7 @@ body {
     }
 
     main {
-        padding: 130px;
+        padding: 230px;
     }
 }
 
@@ -249,6 +255,10 @@ body {
 }
 
 @media (max-width: 1280px) {
+    #valores {
+        transform: translateY(80px);
+    }
+
     .circle-wrapper {
         width: 150px;
         height: 150px;
@@ -270,6 +280,7 @@ body {
 }
 
 @media (max-width: 850px) {
+
     .valores {
         &__section {
             grid-template-columns: repeat(2, 120px);
@@ -484,7 +495,9 @@ body {
         font-size: 1.1rem;
         z-index: 2;
         line-height: 1.5rem;
-        list-style-type: square;
+        list-style-type: none;
+
+
     }
 }
 

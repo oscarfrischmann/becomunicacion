@@ -31,6 +31,13 @@
   opacity: 0;
 }
 
+img.list-icon {
+  width: 15px !important;
+  margin: 0px !important;
+  transform: translate(0, 0) !important;
+  vertical-align: middle;
+}
+
 header {
   background-color: white;
   height: 60px;
@@ -315,6 +322,11 @@ body {
   filter: drop-shadow(10px 10px 10px rgb(22, 22, 22));
 }
 
+@media (max-width: 1280px) {
+  .index__tittles {
+    transform: translateY(-70px);
+  }
+}
 @media only screen and (min-width: 1161px) and (max-width: 1199px) {
   .index__logo {
     grid-row: -4/-2;
@@ -345,7 +357,7 @@ body {
     transform: translateY(0px);
   }
   main {
-    padding: 130px;
+    padding: 230px;
   }
 }
 .dropdown-menu.show {
@@ -458,6 +470,9 @@ body {
 }
 
 @media (max-width: 1280px) {
+  #valores {
+    transform: translateY(80px);
+  }
   .circle-wrapper {
     width: 150px;
     height: 150px;
@@ -651,7 +666,7 @@ body {
   font-size: 1.1rem;
   z-index: 2;
   line-height: 1.5rem;
-  list-style-type: square;
+  list-style-type: none;
 }
 
 @media (max-width: 1280px) {
