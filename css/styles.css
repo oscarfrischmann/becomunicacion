@@ -55,11 +55,10 @@ img.list-icon {
   z-index: -1;
 }
 
-.display-none {
-  display: none;
-}
-
 @media (max-width: 400px) {
+  .display-none {
+    display: none;
+  }
   .bi-hand-index-thumb {
     position: fixed;
     top: 50%;
@@ -84,32 +83,6 @@ img.list-icon {
     80% {
       transform: translateY(0);
     }
-  }
-}
-.bi-hand-index-thumb {
-  position: fixed;
-  top: 50%;
-  left: 80%;
-  font-size: 2rem;
-  z-index: 5;
-  color: #ea5736;
-  animation: scroll 2s ease-in-out 2;
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateY(0);
-    scale: 1;
-  }
-  50% {
-    transform: translateY(60px);
-    scale: 1.1;
-  }
-  51% {
-    scale: 1;
-  }
-  80% {
-    transform: translateY(0);
   }
 }
 header {
