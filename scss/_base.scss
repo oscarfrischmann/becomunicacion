@@ -16,17 +16,15 @@
     }
 }
 
-
 @font-face {
-    font-family: "Avenir";
-    src: url("../fonts/AvenirNext-Regular.ttf");
+    font-family: 'Avenir';
+    src: url('../fonts/AvenirNext-Regular.ttf');
 }
 
 @font-face {
     font-family: 'segoe';
     src: url('../fonts/SEGOEUI.TTF');
 }
-
 
 .container-fluid {
     --bs-gutter-x: 0rem;
@@ -62,4 +60,92 @@ img.list-icon {
     margin: 0px !important;
     transform: translate(0, 0) !important;
     vertical-align: middle;
+}
+
+.clipped {
+    clip: rect(0 0 0 0);
+    border: 0;
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    display: block;
+    margin: 0 -1px -1px 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.display-none {
+    display: none;
+}
+
+@media (max-width: 400px) {
+    .bi-hand-index-thumb {
+        position: fixed;
+        top: 50%;
+        left: 80%;
+        font-size: 2rem;
+        z-index: 5;
+        color: $orange;
+        animation: scroll 2s ease-in-out 3
+            /*, zoom 2s linear 2*/
+        ;
+        // transform: translateY(50px);
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translateY(0);
+            scale: 1;
+        }
+
+        50% {
+            transform: translateY(60px);
+            scale: 1.1;
+        }
+
+        51% {
+            scale: 1;
+
+        }
+
+        80% {
+            transform: translateY(0);
+        }
+    }
+
+}
+
+.bi-hand-index-thumb {
+    position: fixed;
+    top: 50%;
+    left: 80%;
+    font-size: 2rem;
+    z-index: 5;
+    color: $orange;
+    animation: scroll 2s ease-in-out 2
+        /*, zoom 2s linear 2*/
+    ;
+    // transform: translateY(50px);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+        scale: 1;
+    }
+
+    50% {
+        transform: translateY(60px);
+        scale: 1.1;
+    }
+
+    51% {
+        scale: 1;
+
+    }
+
+    80% {
+        transform: translateY(0);
+    }
 }

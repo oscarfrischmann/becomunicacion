@@ -1,7 +1,7 @@
 const dropDownContainer = document.getElementById('navbarNavDropdown');
 const valoresH2 = document.querySelector('.valores__h2');
 const dropDownItem = document.querySelectorAll('.dropdown-item');
-dropDownItem.forEach((e) => {
+dropDownItem.forEach((e, i) => {
 	closeNavbar(e);
 });
 
@@ -31,7 +31,7 @@ logoSimple.addEventListener('click', () => {
 	}, 1000);
 });
 
-function animations(domObject, animationRemove, animationAdd) {
+function scrollAnimations(domObject, animationRemove, animationAdd) {
 	const triggerBottom = (window.innerHeight / 5) * 4;
 	domObject.forEach((animatedObject) => {
 		const top = animatedObject.getBoundingClientRect().top;
@@ -48,28 +48,28 @@ function animations(domObject, animationRemove, animationAdd) {
 //* titulos nuestros valores - comunicacion.interna.emocional.externa
 const tittlesInRigth = document.querySelectorAll('.in-rigth');
 window.addEventListener('scroll', () => {
-	animations(tittlesInRigth, 'animate__fadeOutRight', 'animate__fadeInRight');
+	scrollAnimations(tittlesInRigth, 'animate__fadeOutRight', 'animate__fadeInRight');
 });
 
 //*about us cards flip
 const flipY = document.querySelectorAll('.quienes-somos__card');
 window.addEventListener('scroll', () => {
-	animations(flipY, 'animate__flipOutY', 'animate__flipInY');
+	scrollAnimations(flipY, 'animate__flipOutY', 'animate__flipInY');
 });
 
 //*logos
 const fadeInDown = document.querySelectorAll('.in-down');
 window.addEventListener('scroll', () => {
-	animations(fadeInDown, 'animate__fadeOutUp', 'animate__fadeInDown');
+	scrollAnimations(fadeInDown, 'animate__fadeOutUp', 'animate__fadeInDown');
 });
 
 const fadeIn = document.querySelectorAll('.fade-in');
 window.addEventListener('scroll', () => {
-	animations(fadeIn, 'animate__fadeOut', 'animate__fadeIn');
+	scrollAnimations(fadeIn, 'animate__fadeOut', 'animate__fadeIn');
 });
 
 const internaLi = document.querySelectorAll(' .com-interna__ul.first > li');
-+console.log(internaLi);
+// console.log(internaLi);
 internaLi.forEach((e, i) => {
 	e.classList.add('animate__animated');
 	e.style.setProperty('--animate-delay', `${i * 1000 + 1000}ms`);
@@ -77,15 +77,15 @@ internaLi.forEach((e, i) => {
 });
 
 window.addEventListener('scroll', () => {
-	animations(internaLi, 'animate__fadeOutRight', 'animate__fadeInRight');
+	scrollAnimations(internaLi, 'animate__fadeOutRight', 'animate__fadeInRight');
 	// if (internaLi.includes('fadeInRight')) {
 	// 	console.log('despegaa');
 	// }
-	console.log(
-		internaLi[0].classList.value === 'animate__animated animate__fadeInRight'
-	);
+	// console.log(
+	// 	internaLi[0].classList.value === 'animate__animated animate__fadeInRight'
+	// );
 });
-console.log(internaLi[0]);
+// console.log(internaLi[0]);
 
 const emocionalLi = document.querySelectorAll(' .com-interna__ul.second > li');
 emocionalLi.forEach((e, i) => {
@@ -95,7 +95,7 @@ emocionalLi.forEach((e, i) => {
 });
 
 window.addEventListener('scroll', () => {
-	animations(emocionalLi, 'animate__fadeOutLeft', 'animate__fadeInLeft');
+	scrollAnimations(emocionalLi, 'animate__fadeOutLeft', 'animate__fadeInLeft');
 });
 
 const externaLi = document.querySelectorAll(' .com-interna__ul.third > li');
@@ -106,7 +106,7 @@ externaLi.forEach((e, i) => {
 });
 
 window.addEventListener('scroll', () => {
-	animations(externaLi, 'animate__fadeOutLeft', 'animate__fadeInLeft');
+	scrollAnimations(externaLi, 'animate__fadeOutLeft', 'animate__fadeInLeft');
 });
 
 //*list type image
@@ -120,3 +120,17 @@ window.addEventListener('scroll', () => {
 // 		'../../img/logo-simple.png'
 // 	);
 // });
+
+//* HAND show
+
+dropDownItem.forEach((e, i) => {
+	e.addEventListener('click', () => {
+		if (i === 3 || i === 4) {
+			const hand = document.getElementById('hand');
+			hand.classList.toggle('display-none');
+			setTimeout(() => {
+				hand.classList.add('display-none');
+			}, 4000);
+		}
+	});
+});
