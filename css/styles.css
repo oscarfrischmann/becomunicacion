@@ -55,7 +55,7 @@ img.list-icon {
   z-index: -1;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 768px) {
   .display-none {
     display: none;
   }
