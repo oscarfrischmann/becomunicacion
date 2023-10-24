@@ -1,3 +1,13 @@
+import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js';
+import { getAuth } from 'https://www.gstatic.com/firebasejs/10.5.0/firebase-auth.js';
+import {
+	getFirestore,
+	collection,
+	addDoc,
+	setDoc,
+	doc,
+} from 'https://www.gstatic.com/firebasejs/10.5.0/firebase-firestore.js';
+
 const dropDownContainer = document.getElementById('navbarNavDropdown');
 const valoresH2 = document.querySelector('.valores__h2');
 const dropDownItem = document.querySelectorAll('.dropdown-item');
@@ -134,3 +144,49 @@ dropDownItem.forEach((e, i) => {
 		}
 	});
 });
+
+//*contact FORM
+//*animation
+const labels = document.querySelectorAll('.form-control label');
+
+labels.forEach((label) => {
+	label.innerHTML = label.innerText
+		.split('')
+		.map(
+			(letter, i) => `<span style="transition-delay:${i * 50}ms">${letter}</span>`
+		)
+		.join('');
+});
+
+//* form functionality
+const firebaseConfig = initializeApp({
+	apiKey: 'AIzaSyDfjRthkU5Rmh5MIH4E6CBf5quLyEPaQd0',
+	authDomain: 'be-comunicacion.firebaseapp.com',
+	projectId: 'be-comunicacion',
+	storageBucket: 'be-comunicacion.appspot.com',
+	messagingSenderId: '499964412994',
+	appId: '1:499964412994:web:16f832a42443b0751159db',
+});
+const db = getFirestore(firebaseConfig);
+
+const form = document.getElementById('contactForm');
+function submitForm(e) {
+	e.preventDefault();
+	const email = form['email'].value;
+	const text = form['text'].value;
+
+	const contacto = {
+		email: email,
+		text: text,
+	};
+	(async function () {
+		try {
+			await addDoc(collection(db, 'contacto', ''), contacto).then(
+				console.log('SUCCESS!!!')
+			);
+		} catch (e) {
+			console.log('Error enviando document:', e);
+		}
+	})();
+}
+form.addEventListener('submit', submitForm);
