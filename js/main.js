@@ -181,9 +181,16 @@ function submitForm(e) {
 	};
 	(async function () {
 		try {
-			await addDoc(collection(db, 'contacto', ''), contacto).then(
-				console.log('SUCCESS!!!')
-			);
+			await addDoc(collection(db, 'contacto'), contacto).then(() => {
+				const modalForm = document.getElementById('modalForm');
+				modalForm.classList.toggle('display-none');
+				modalForm.classList.toggle('animate__animated');
+				setTimeout(() => {
+					modalForm.classList.toggle('display-none');
+					modalForm.classList.toggle('animate__animated');
+					location.reload();
+				}, 2000);
+			});
 		} catch (e) {
 			console.log('Error enviando document:', e);
 		}

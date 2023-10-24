@@ -315,6 +315,31 @@ main {
   transform: translateY(-30px);
 }
 
+.modal-form {
+  position: absolute;
+  z-index: 10;
+  background-color: #ea5736;
+  border: 1px solid black;
+  border-radius: 15px;
+  box-shadow: 1px 1px 20px black;
+  width: 300px;
+  height: 200px;
+  top: calc(50% - 200px);
+  left: calc(50% - 150px);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.modal-form__span {
+  font-size: 2rem;
+}
+.modal-form.display-none {
+  display: none;
+}
+
 @media only screen and (max-width: 1199px) and (min-width: 992px) {
   .footer__logo {
     right: -106px;
@@ -323,7 +348,7 @@ main {
 }
 @media (max-width: 991px) {
   .footer {
-    position: initial;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
