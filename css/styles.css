@@ -203,6 +203,9 @@ main {
   top: 50px;
   width: 30%;
 }
+.footer__mailto {
+  width: fit-content;
+}
 .footer__end {
   display: flex;
   justify-content: center;

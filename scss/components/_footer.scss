@@ -45,6 +45,10 @@
         width: 30%
     }
 
+    &__mailto {
+        width: fit-content;
+    }
+
     &__end {
         @include flex(center, center, row, 10px);
         color: white;
