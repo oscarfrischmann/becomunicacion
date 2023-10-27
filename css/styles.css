@@ -161,6 +161,7 @@ main {
 .footer {
   position: relative;
   padding-left: 60px;
+  padding-bottom: 100px;
 }
 .footer h2 {
   font-family: "Avenir";
@@ -199,9 +200,9 @@ main {
 }
 .footer__logo {
   position: absolute;
-  right: 50px;
-  top: 50px;
-  width: 30%;
+  right: 0px;
+  top: 15px;
+  width: 25%;
 }
 .footer__mailto {
   width: fit-content;
@@ -234,9 +235,123 @@ main {
   margin-bottom: 21px;
 }
 
+.form {
+  position: absolute;
+  top: -20px;
+  left: 530px;
+  border: 1px solid rgba(255, 255, 255, 0.117);
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.botn {
+  cursor: pointer;
+  display: inline-block;
+  background: #ea5736;
+  padding: 10px;
+  margin-top: 10px;
+  font-family: inherit;
+  font-size: 16px;
+  border: 0;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.botn:focus {
+  outline: 0;
+}
+
+.botn:active {
+  transform: scale(0.98);
+}
+
+.form-control {
+  position: relative;
+  margin: 10px 0 26px;
+  width: 250px;
+  height: 75px;
+  background-color: transparent;
+  border-color: transparent;
+  color: white;
+}
+
+.form-control input,
+.form-control textarea {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px white solid;
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 18px;
+  color: white;
+}
+
+.form-control input:focus,
+.form-control input:valid,
+.form-control textarea:focus,
+.form-control textarea:valid {
+  outline: 0;
+  border-bottom-color: lightblue;
+}
+
+.form-control label {
+  position: absolute;
+  top: 0px;
+  left: 0;
+}
+
+.form-control label span {
+  display: inline-block;
+  font-size: 18px;
+  min-width: 5px;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span,
+.form-control textarea:focus + label span,
+.form-control textarea:valid + label span {
+  color: lightblue;
+  transform: translateY(-30px);
+}
+
+.modal-form {
+  position: absolute;
+  z-index: 10;
+  background-color: #ea5736;
+  border: 1px solid black;
+  border-radius: 15px;
+  box-shadow: 1px 1px 20px black;
+  width: 300px;
+  height: 200px;
+  top: calc(50% - 200px);
+  left: calc(50% - 150px);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.modal-form__span {
+  font-size: 2rem;
+}
+.modal-form.display-none {
+  display: none;
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+  .footer__logo {
+    right: -106px;
+    top: 32px;
+  }
+}
 @media (max-width: 991px) {
   .footer {
-    position: initial;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -252,6 +367,14 @@ main {
     margin-top: 0;
     width: 80%;
     font-size: 1.1em;
+  }
+  .footer .form {
+    position: unset;
+  }
+}
+@media (max-width: 489px) {
+  .footer__logo {
+    width: 50%;
   }
 }
 :root {
@@ -942,6 +1065,45 @@ body {
   .quienes-somos__p {
     width: 80%;
   }
+}
+.login__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 100px;
+}
+.login__button {
+  padding: 10px;
+  border-radius: 15px;
+  text-transform: uppercase;
+  color: #161f37;
+  background-color: #ea5736;
+  font-weight: 700;
+}
+
+#messages {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 30px;
+}
+#messages .msgContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  background-color: rgba(255, 255, 255, 0.027);
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px black;
+  width: 284px;
+  height: auto;
+}
+#messages span {
+  color: aliceblue;
 }
 
 /*# sourceMappingURL=styles.css.map */
